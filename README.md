@@ -23,7 +23,7 @@ Currently, Gario listens on the following addresses and ports:
 * *:88 - for the stats server (I would use it to track servers)
 * *:443 - for the game server
 
-~~(Once the game server is running, you can connect (locally) by typing `agar.io/?ip=127.0.0.1:443` into your browser's address bar.) Now you should use our client !
+~~(Once the game server is running, you can connect (locally) by typing `agar.io/?ip=127.0.0.1:443` into your browser's address bar.)~~ Now you should use our client !
 
 ## Custom Game modes
 Gario has support for custom game modes. To switch between game modes, change the value of "serverGamemode" in the configurations file to the selected game mode id and restart the server. The current supported game modes are:
