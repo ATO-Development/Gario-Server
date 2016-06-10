@@ -1,53 +1,6 @@
 
 # Gario Server
-A fully functional open source Agar.io server implementation, written in Node.js by the big ajs development team. Ogar Unlimited is designed to be used with the latest Agar.io client. It is basically what it says in the title, Ogar, except its functionality is unlimited!
-
-
-~~(Sorry but all client clones of agar.io are ILLEGAL, thus we are not making those. You must use `agar.io/?ip=[ip]`)~~
-**We dont support them but you can use them**
-
-
-
-**NOTE: FOR THOSE WHO CANT USE THE INSTALL DEPENDANCIES SCRIPT, YOU MUST DO NPM INSTALL AFTER YOU CD INTO THE SRC FOLDER**
-
-
-### Highlight features in this modified copy
- 1. PMSG command, to periodically send a message (no need for admin to be online to explain rules)
- 2. OP , to do stuff in game WITHOUT a illegal clone client, see below
- 3. MSG, FMSG commands
- 4. Max IP Connections
- 5. Troll command ;)
- 6. More GameModes
- 7. Ban, Unban, Ban List (with revolutionary ban technique, no lag, no DDoS attacks)
- 8. Autoban option (see config.ini or advconfig.ini)
- 9. More control (config.ini and advconfig.ini)
- 10. and other features such as merge or nojoin or kick/killrange
- 11. Better physics (ejected mass and split and virus)
- 12. Colortext command (Changes console output color and style)
- 13. Live Console (see gameserver.ini, where a live console appears) NOTE: this is way different that Ogarserv's Console
- 14. Restart. Make it restart automatically or restart manually, Only works if use windows start script
- 15. skins, to use custom skins, do <skinname> and then your name. for example `<spy> lol` will give you spy skin with name of lol use `[website]` to use a custom skin from a website (you need to use a url shortener though)
- 16. customskins (see custom skins)
- 17. Minions: you can create minions like agario powerups. press q to enter minion control mode (a b will appear next to your name). w = eject, space = split. press q again to exit
- 18. Banlist file
- 19. Opbyip
- 20. Database free high score keeper
- 21. pcmd command to do periodic commands
- 22. range command for bulk commands
- 23. easy verify system as anti bot mesure (config.ini or advconfig.ini)
- 24. mousefilter as a anti bot measure
- 25. plugins. Add gamemodes and commands easily! (See example plugin and template plugin)
- 26. uniban. A pre-made banlist of already known bad ips
- 27. garbage collection. prevent memory leak.
- 28. chat
- 29. Multi server support (see multiverse)
- 30. Bots that team
- 
-### Note:
-Please note that this is updated very frequently and you should check for updates every week. I added an update system but It needs to be initialized by you (because I don't think it is the right thing to do, updating without your consent). Also you may copy this and modify it just please give some credit to the hard working dev team, that is all I care. Another note is that I am sometimes terrible in my grammar (I still cannot spell potato out loud). If there is an issue, please notify me. If there is something you want in this, just make a pull request.
-
-### DO NOT BUY OGAR UL!
-If you've purchased a copy of Ogar UL, you just got scammed. It is open source which means it is FREE. yes FREE! So if you paid any money, well, too bad.
+A funny and amazing agario Server
 
 ### DO not get from other sources
 If you got ogarUL from anywhere besides github, DELETE IT IMMEDIATLY!!! Those might be bundled with viruses and other things. Remember you are running this probably from `sudo`. Get the github one here: https://github.com/AJS-development/Ogar-unlimited
@@ -59,17 +12,9 @@ the official library is here: https://github.com/AJS-development/OgarUL-Plugin-L
 
 To install any plugins from the library, first do `plugin available` and remember the name of the plugin you want. then do `plugin install [name]` and you are set!
 
-### How do I use other plugins?
+### How do I use other plugins
 
-To use a plugin, simply download the folder and drag it into the plugins folder in src or use the plugin add command. To use the plugin add command, the plugin must have a files.txt file. then click on that file, click raw, and then copy the url. Then do `plugin add [url] [pluginname]` and it will even reload automatically for you. Thats it! example, doing `plugin add https://raw.githubusercontent.com/AJS-development/OgarUL-Plugin-Library/master/devtools-plugin/files.txt devtools` will add a plugin called devtools to your plugins.
-
-### How do I create a plugin? Is there Documentation?
-
-This is the fun part, creating your own plugins. There is an example plugin you should look at and there is a template plugin. Currently, there is no documentation, but will be soon in the wiki
-
-### Multiverse
-Multiverse is for having multiple servers in one console. This is how you use it. The command for multiverse is `multiverse [command] [arg]`. Available commands are `list`,`create`,`remove`, and `select`. The list is used by doing `multiverse list` and it will list servers and their ports. It will also tell you f that is the master or is selected. The create command creates a server. The args are `multiverse create [name] [port] [gamemode]`. Make sure that the port is not repeated in other servers. Note that only the master has a statsport. To remove a server, do `multiverse remove [name]`. To then control the server using console commands, you have to select it. Do `multiverse select [name]` to select a server and start controlling it.
-
+### How do I create a plugin? Is there Documentation
 
 ### Easy Verify
 For those of you who have trouble with minions and such, this feature is for you. Currently, there is no program that can get through all of ogar unlimited's filterrs anddd features, but in some future, someone might be able to crack the other anti bot mesures. So we created easy verify, a currently foolproof system that filters out bots. To turn on, turn verify to 1 in config. Then when a player spawns, he is frozen at a spot and is given a 3 digit code. Then that player presses w to kill himself and types in the code in the nickname box. Afteword, when pressing play again, it shows a success message. Press w again to play.
@@ -84,32 +29,16 @@ You use OP by first setting who has op by doing op [id] in console. Then, that p
 
 ## Custom skins (guide)
 You can use custom skins by putting them in customskins.txt
-the format is `[shortcut] [skin]` for the skin field, to use a URL skin, you do `:http://url` DO NOT FORGET TO GET REID OF THE S IF IT IS HTTPS OR FORGET TO PUT A : BEFORE.To use an agario skin, use `%skinname`To use that skin in game simply do `<skinsshortuct>` and then your name,
+the format is `[shortcut] [skin]` for the skin field, to use a URL skin, you do `:http://url` DO NOT FORGET TO GET REID OF THE S IF IT IS HTTPS OR FORGET TO PUT A : BEFORE.To use an agario skin, use `%skinname`To use that skin in game simply do `<skinsshortuct>` and then your name
 
-You can see a more detailed guide on the [wiki] (https://github.com/AJS-development/Ogar-unlimited/wiki/Skins-and-skin-shortcuts)
-
-## Obtaining and Using
-
-As Ogar Unlimited is written in Node.js, you must have Node.js and its "ws", and "request" module installed to use it (unless you are using the Windows binary). You can usually download Node using your distribution's package manager (for *nix-like systems), or from [the Node website](http://nodejs.org). To install the "ws" and "request" module that is required, open up your system command line (cmd for windows, terminal for mac) and type "npm install ws" and do "npm install request". To see a detailed guide go to the [Installation guide] (https://github.com/AJS-development/Ogar-unlimited/wiki/Installation) in the wiki
-
-(You can install and use Ogar unlimited on windows very quickly. First click `Installdependancies.bat` in src. Then wait (it takes a while), then click `Start.bat` and you're off! The next time you start the server, you only have to click `Start.bat`)
-
-~~ (Binarys are also available in Releases)~~ OUTDATED
-
-Currently, Ogar listens on the following addresses and ports:
+Currently, Gario listens on the following addresses and ports:
 * *:88 - for the stats server (I would use it to track servers)
 * *:443 - for the game server
 
-Please note that on some systems, you may have to run the process as root or otherwise elevate your privileges to allow the process to listen on the needed ports. **If you are getting an EADDRINUSE error, it means that the port required to run Ogar UL is being used. Usually, Skype is the culprit. To solve this, either close out skype, or change the serverPort value in settings/advconfig.ini to a different port. You will have to change your connection ip to "127.0.0.1:PORT"**
-
-Once the game server is running, you can connect (locally) by typing `agar.io/?ip=127.0.0.1:443` into your browser's address bar.
-
-## Configuring Ogar UL
-To control how your server is run, Edit files in `src/settings/`
-
+~~(Once the game server is running, you can connect (locally) by typing `agar.io/?ip=127.0.0.1:443` into your browser's address bar.) Now you should use our client !
 
 ## Custom Game modes
-Ogar UL has support for custom game modes. To switch between game modes, change the value of "serverGamemode" in the configurations file to the selected game mode id and restart the server. The current supported game modes are:
+Gario has support for custom game modes. To switch between game modes, change the value of "serverGamemode" in the configurations file to the selected game mode id and restart the server. The current supported game modes are:
 
 Id   | Name
 -----|--------------
@@ -283,18 +212,3 @@ The current available console commands are listed here. Command names are not ca
    * Teleports the specified player to the specified coordinates.
  - Virus [X position] [Y position] [Mass]
    * Spawns a virus cell at those coordinates. If a mass value is not specified, then the server will default to "virusStartMass" in the config.
-
-## Contributing
-Just make a pull request or make your own copy
-
-## Things that I dont want you to copy (copying it to your own file or fork)
-1. No-Lag antibot measures
-2. OP
-3. minions
-4. smart bot/despawn
-5. easy verify
-6. Periodic things (pmsg, pcmd, etc..)
-7. mousefilter
-8. plugins
-
-#####anything else, if you improved it, you dont have to give us credit, or else if you just copied, you must give us credit
