@@ -2,13 +2,6 @@
 # Gario Server
 A funny and amazing agario Server
 
-### DO not get from other sources
-If you got ogarUL from anywhere besides github, DELETE IT IMMEDIATLY!!! Those might be bundled with viruses and other things. Remember you are running this probably from `sudo`. Get the github one here: https://github.com/AJS-development/Ogar-unlimited
-
-
-### How do I install plugins from the official library?
-the official library is here: https://github.com/AJS-development/OgarUL-Plugin-Library
-
 
 To install any plugins from the library, first do `plugin available` and remember the name of the plugin you want. then do `plugin install [name]` and you are set!
 
@@ -21,11 +14,6 @@ For those of you who have trouble with minions and such, this feature is for you
 
 ### Minions
 You use minions by doing `minion [yourid] [amount] [minionname]`. Then, they will start following your mouse. You can control those minions by useing E and R keys. E for split. R for feed. If that doesnt work because of you client, turn useER to 0 in config.ini. then in game, q key. If you press it, a B will appear next to your name. then controls will be normal except now ejecting and splitting will happen on your minions not you. you can reenter normal control mode by pressing q again. You can disable minions by doing `minion [id]` in console for just you or do `minion destroy` and it will remove all minions.
-
-### OP(2.4.5) - Guide,
-You use OP by first setting who has op by doing op [id] in console. Then, that player can use the op features in game by pressing q. Then a c will appear next to your name. If you press w in this state, it gives you 100 more mass. If you press space in this state, you will be able to rejoin instantly. You will find out that if you press q again, two c's will appear next to your name. if you press w in this state, you shoot viruses. If you press space in this state, you shoot tiny things (almost invisible) that if someone eats, their mass is reduced by 100. Then, if you press q again,3 c's will appear.press w with 3c's, you shoot a virus, but whoever who eats it will be trolled :). If you press space with 3 c's the person who eats the virus will explode.If you  press q again, 4 cs will appear and if you press w, you will shoot a virus tha kills people and space, it shoots a kick virus. You can then exit op by pressing q again after doing an action or by pressing Q until the three c's will dissappear (so that you can normally split and shoot mass).
-
-* Note: names (CC's) dont work when player name is blank and it doesnt work on Virus and Leap gamemodes
 
 ## Custom skins (guide)
 You can use custom skins by putting them in customskins.txt
